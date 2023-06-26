@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewreport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRAZYSOUL E-commerce website development</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="data:image/png;base64,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" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<div class="header">
+    <div class="container">
+    <div class="navbar">
+       <div class="logo">
+        <a href="index.html"><img src="Images/download.png" width="250px"></a>
+        </div>
+        <nav>
+           <ul id="MenuItems">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="Contactus.html">Contact us</a></li>
+            <li><a href="account.html">Account</a></li>
+           </ul>
+        </nav>
+        <a href="cart.html"><img src="Images/cart.png" width="30px" height="30px"></a>
+        <img src="Images/menu.png" width="30px" height="30px"class="menu-icon" onclick="menutoggle()">
+    </div>
+    <div class="row">
+        <div class="col-2">
+            <h1>Give your workout<br> a new style</h1>
+            <p>Nothing is impossiple,<br>the word itself says 'I'm possible' !"</p>
+          <a href="" class="btn">Explore Now &#8594;</a> 
+        </div>
+        <div class="col-2">
+             <img src="Images/image1.png" alt="">
+        </div>
+    </div>
+    </div>
+</div>
+
+    <!--------featured categories-------->
+    <div class="categories">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3">
+                    <img src="Images/category-1.jpg">
+                </div>
+                <div class="col-3">
+                    <img src="Images/category-2.jpg">
+                </div>
+                <div class="col-3">
+                    <img src="Images/category-3.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------featured products-------->
+    <div class="small-container">
+        <h2 class="title">Featured products</h2>
+        <div class="row">
+            <div class="col-4">
+           <a href="productsdetail.html"><img src="Images/product-1.jpg"></a>
+           <a href="productdetails.html"><h4>Red printed T-shirt</h4></a>
+            <div class="rating">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span> 
+            </div>
+            <p>$70.00</p>
+            </div>
+            <div class="col-4">
+                <img src="Images/product-2.jpg"> 
+                <h4>Shoes</h4>
+                <div class="rating">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span> 
+                </div>
+                <p>$59.88</p>
+                </div>
+                <div class="col-4">
+                    <img src="Images/product-3.jpg"> 
+                    <h4>Trouser</h4>
+                    <div class="rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span> 
+                    </div>
+                    <p>$25.00</p>
+                    </div>
+                    <div class="col-4">
+                        <img src="Images/product-4.jpg"> 
+                        <h4>Blue T-shirt</h4>
+                        <div class="rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star-half-o"></span> 
+                        </div>
+                        <p>$70.00</p>
+                        </div>
+                        <div class="col-4">
+                            <img src="Images/imges/Oppo-Find-X6_featured-image-packshot-review.jpg"> 
+                            <h4>Oppo-find-X6</h4>
+                            <div class="rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star-half-o"></span> 
+                            </div>
+                            <p>$70.00</p>
+                            </div> <div class="col-4">
+                                <img src="Images/HL7777 Product_777 x 826 pxls (1).webp"> 
+                                <h4>Mixer Grinder</h4>
+                                <div class="rating">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star-half-o"></span> 
+                                </div>
+                                <p>$70.00</p>
+                                </div> <div class="col-4">
+                                    <img src="Images/imges/red-metallic-saree.jpg"> 
+                                    <h4>Red-metallic-saree</h4>
+                                    <div class="rating">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star-half-o"></span> 
+                                    </div>
+                                    <p>$70.00</p>
+                                    </div> 
+                                    <div class="col-4">
+                                        <img src="Images/imges/jewellery.jpg"> 
+                                        <h4>Blue T-shirt</h4>
+                                        <div class="rating">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star-half-o"></span> 
+                                        </div>
+                                        <p>$70.00</p>
+                                        </div>
+                    </div>
+                    <h2 class="title"> Latest product</h2>
+                    <div class="row">
+                        <div class="col-4">
+                        <img src="Images/product-5.jpg"> 
+                        <h4>Red printed T-shirt</h4>
+                        <div class="rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span> 
+                        </div>
+                        <p>$70.00</p>
+                    </div>
+                        <div class="col-4">
+                            <img src="Images/product-6.jpg"> 
+                            <h4>Shoes</h4>
+                            <div class="rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span> 
+                            </div>
+                            <p>$59.88</p>
+                            </div>
+                            <div class="col-4">
+                                <img src="Images/product-7.jpg"> 
+                                <h4>Trouser</h4>
+                                <div class="rating">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span> 
+                                </div>
+                                <p>$25.00</p>
+                                </div>
+                                <div class="col-4">
+                                    <img src="Images/product-8.jpg"> 
+                                    <h4>Blue T-shirt</h4>
+                                    <div class="rating">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star-half-o"></span> 
+                                    </div>
+                                    <p>$70.00</p>
+                                    </div>
+                                <div class="col-4">
+                                    <img src="Images/product-9.jpg"> 
+                                    <h4>Blue T-shirt</h4>
+                                    <div class="rating">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star-half-o"></span> 
+                                    </div>
+                                    <p>$70.00</p>
+                                    </div>
+                                    <div class="col-4">
+                                        <img src="Images/product-10.jpg"> 
+                                        <h4>Blue T-shirt</h4>
+                                        <div class="rating">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star-half-o"></span> 
+                                        </div>
+                                        <p>$70.00</p>
+                                        </div>
+                 <div class="col-4">
+                    <img src="Images/product-11.jpg"> 
+                    <h4>Blue T-shirt</h4>
+                    <div class="rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star-half-o"></span> 
+                    </div>
+                    <p>$70.00</p>
+                    </div>
+                    <div class="col-4">
+                    <img src="Images/product-12.jpg"> 
+                    <h4>Blue T-shirt</h4>
+                    <div class="rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>                        
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star-half-o"></span> 
+                    </div>
+                    <p>$70.00</p>
+                    </div>
+             </div>
+                 </div>
+             !<!---------- offer --------->    
+    <div class="offer">
+       <div class="small-container" >
+        <div class="row">
+            <div class="col-2">
+                <img src="Images/xiaomi-mi-band-4-amoled-black-.jpg" class="offer-img">
+            </div>
+            <div class="col-2">
+                <p>Exclusively Available on Crazy Soul</p>
+                <h1>Smart band 4</h1>
+                <small>
+                    Buy the Xiaomi Mi Band 4 AMOLED (Black) that features an attractive and vivid AMOLED display with a screen resolution of 120 x 240 pixels. The brightness level of the display can be easily customized as per your convenience.
+
+This Xiaomi Mi Band 4 AMOLED (Black) has a screen size of 0.95 Inch. This lightweight and comfortable to wear tracker weighs around 22 grams. In addition to this, the fitness band comes with a battery life of Up to 20 Days and can be charged by via USB. Moreover, this fitness band is compatible with Android,iOS operating system.
+
+The fitness band is available in color options like Black. You can purchase it at the best prices online on shop.stylesoul.com after going through its features, specifications, and user ratings.
+                    Screen size: 0.95 Inch with 120 x 240 pixels resolution
+                    Equipped with battery that lasts Up to 20 Days
+                    Compatible with Android,iOS
+                    Weight: 22 grams
+                    Activity trackers in the band include Sleep Quality, Steps, and more.
+                    Color: Black</small>
+                    <a href=""class=btn>Buy Now &#8594;</a>
+                 </div>
+            </div>
+       </div>
+    </div>
+<!-------- testimonial -------->
+ <div class="testimonial">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-3">
+             <span class="fa fa-quote-left checked"></span>  
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text </p>
+                <div class="rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>                        
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star-half-o"></span> 
+                    </div>
+                    <img src="Images/user-1.png">
+                    <h3>Olivia</h3>
+            </div>
+            <div class="col-3">
+                <span class="fa fa-quote-left checked"></span>  
+                   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text </p>
+                   <div class="rating">
+                       <span class="fa fa-star checked"></span>
+                       <span class="fa fa-star checked"></span>                        
+                       <span class="fa fa-star checked"></span>
+                       <span class="fa fa-star checked"></span>
+                       <span class="fa fa-star-half-o"></span> 
+                       </div>
+                       <img src="Images/user-2.png">
+                       <h3>James</h3>
+               </div> <div class="col-3">
+                <span class="fa fa-quote-left checked"></span>  
+                   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text </p>
+                   <div class="rating">
+                       <span class="fa fa-star checked"></span>
+                       <span class="fa fa-star checked"></span>                        
+                       <span class="fa fa-star checked"></span>
+                       <span class="fa fa-star checked"></span>
+                       <span class="fa fa-star-half-o"></span> 
+                       </div>
+                       <img src="Images/user-3.png">
+                       <h3>Charlotte</h3>
+               </div>
+        </div>
+    </div>
+ </div>
+
+ <!---------- Brands ---------->
+ <div class="brands">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-5">
+                <img src="Images/logo-godrej.png">
+            </div>
+            <div class="col-5">
+                <img src="Images/logo-oppo.png">
+            </div><div class="col-5">
+                <img src="Images/logo-coca-cola.png">
+            </div><div class="col-5">
+                <img src="Images/logo-paypal.png">
+            </div><div class="col-5">
+                <img src="Images/logo-philips.png">
+            </div>
+        </div>
+    </div>
+ </div>
+
+ <!----------- footer ----------->
+ <div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-c0l-1">
+                <h3>Download Our App</h3>
+                <p>Download App for Android and ios mobile phone.</p>
+                <div class="app-logo">
+                    <img src="Images/play-store.png">
+                    <img src="Images/app-store.png">
+                </div>
+            </div>
+            <div class="footer-c0l-2">
+             <img src="Images/imges/channels4_banner.jpg"
+             width="600"
+             height="200"/>
+                <p>Our Purpose Is To Sustainably Make the pleasure and Benefits of Sports Accessible to the Many.</p>
+            </div>
+            <div class="footer-c0l-3">
+                   <h3>Useful Links</h3>
+                  <ul>
+                    <li>Coupons</li>
+                    <li>Blig Post</li>
+                    <li>Return Policy</li>
+                    <li>Join Affiliate</li>
+                  </ul>
+               </div>
+               <div class="footer-c0l-4">
+                <h3>Follow Us</h3>
+               <ul>
+                 <li>Facebook</li>
+                 <li>Twitter</li>
+                 <li>Instagram</li>
+                 <li>YouTube</li>
+               </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2022 - Easy Tutorials</p>
+    </div>
+ </div>
+
+
+ <!----------js for toggle menu---------->
+
+ <script>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px")
+        {
+            MenuItems.style.maxheight = "200px";
+        }
+        else{
+            MenuItems.style.maxHeight = "0px";
+        }
+    }
+ </script>
+
+
+
+</body>
+</html>
